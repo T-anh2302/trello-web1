@@ -34,7 +34,8 @@ function AppBar() {
       gap: 2,
       paddingX: 2,
       overflowX: 'auto',
-      bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#2c3e50' : '#1565c0')
+      bgcolor: (theme) => (theme.palette.mode === 'dark' ? '#2c3e50' : '#1565c0'),
+      '&::-webkit-scrollbar-track': { m: 2 }
     }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         <AppsIcon sx={{ color: 'white' }}/>
@@ -93,7 +94,7 @@ function AppBar() {
             '& input': { color: 'white' },
             '& label.Mui-focused': { color: 'white' },
             '& .MuiOutlinedInput-root': {
-              '& fieldset': { borderColor: 'white' },
+              '& fieldset': { borderColor: '#95a5a6' },
               '&:hover fieldset': { borderColor: 'white' },
               '&.Mui-focused fieldset': { borderColor: 'white' }
             }
